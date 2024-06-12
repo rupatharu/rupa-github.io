@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rupa Tharu- CV</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 70%;
+            margin: auto;
+            overflow: hidden;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding-top: 30px;
+            padding-bottom: 20px;
+            min-height: 70px;
+            border-bottom: #77aaff 10px solid;
+        }
+
+        header #branding h1 {
+            margin: 0;
+            margin-bottom: 0; /* Zero bottom margin to reduce space */
+            font-size: 24px; /* Adjust font size as needed */
+            line-height: 1.2; /* Adjust line height for closer lines */
+        }
+        header #branding h2 {
+            margin: 5;
+            font-size: 18px; /* Adjust font size as needed */
+            line-height: 1.2; /* Line height to control space between header lines */
+        }
+        header a {
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 16px;
+        }
+        header ul {
+            padding: 0;
+            list-style: none;
+        }
+        header li {
+            float: left;
+            display: inline;
+            padding: 0 20px 0 20px;
+        }
+        header #branding {
+            float: left;
+        }
+        header #branding h1 {
+            margin: 0;
+        }
+        header nav {
+            float: right;
+            margin-top: 10px;
+        }
+        header .highlight, header .current a {
+            color: #77aaff;
+        }
+        .section {
+            margin-bottom: 30px;
+        }
+        .section h2 {
+            border-bottom: #77aaff 2px solid;
+            padding-bottom: 0px;
+        }
+        .section h8 {
+            border-bottom: #0d0d0d 2px solid;
+            padding-bottom: 2px;
+            margin-bottom: 30px;
+        }
+        .section ul li {
+            list-style-type: disc; /* Adds bullet points to list items */
+            padding: 2px 2px; /* Adjust padding */
+            background: #f4f4f4;
+            margin-bottom: 0px; /* Reduced space between list items */
+            margin-top: -6px;
+        }
+        .skills.section ul {
+            columns: 2; /* Splits the list into two columns */
+            -webkit-columns: 2; /* Chrome, Safari, Opera */
+            -moz-columns: 2; /* Firefox */
+        }
+        .skills.section li {
+            list-style-type: none; /* Removes default list bullet */
+            margin-bottom: 10px; /* Adds space between items */
+        }
+        .star-rating {
+            font-size: 16px; /* Adjust size as needed */
+            color: #0080ff; /* Gold color */
+        }
+        .contact, .details, .links {
+            float: right;
+            width: 30%;
+            margin-bottom: 5px;
+            margin-top: -30px
+        }
+        .contact ul, .details ul, .links ul{
+            margin-bottom: 5px;
+            margin-top: -20px
+        }
+        .main {
+            float: left;
+            width: 65%;
+        }
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        /* Print Styles */
+        @media print {
+        body {
+            width: 100%;
+            font-size: 12pt;
+            -webkit-print-color-adjust: exact; /* Chrome, Safari */
+            color-adjust: exact; /* Firefox */
+        }
+        .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+        }
+        a {
+            text-decoration: underline; /* Keeps underlines for links */
+            color: blue; /* Keeps links in blue */
+        }
+        header, footer, button {
+            display: none; /* Hides elements that should not be printed */
+        }
+        .print-header {
+            display: block;
+            text-align: center;
+            font-size: 16pt;
+            margin-top: 5mm;
+            background-color: brown; /* Ensures background color is applied */
+            color: white; /* Ensures text color is applied */
+            -webkit-print-color-adjust: exact; /* Chrome, Safari */
+            color-adjust: exact; /* Firefox */
+        }
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <h1>Rupa Tharu</h1>
+                <h2>Lab Technician</h2>
+            </div>
+        </div>
+    </header>
+
+    <button onclick="window.print();" style="position: fixed; top: 20px; right: 20px;">Print this page</button>
+
+    <div class="container clearfix">
+        <div class="print-header" style="background-color: rgb(60, 57, 57); color: white; text-align: center; font-size: 10pt; line-height: 1.5">
+            <h1 style="margin-bottom: 0;">Rupa Tharu</h1>
+            <h2 style="margin-top: 0mm;">Lab Technician</h2>
+        </div>
+        <section class="contact">
+            <h2>Contact</h2>
+            <ul>
+                <li>Email: <a href="roops.tharu@gmail.com">roops.tharu@gmail.com</a></li>
+                <li>Phone: 7986719105</li>
+                <li>Address: Working Women Hostel, PGIMER, Chandigarh, 160012, India</li>
+            </ul>
+        </section>
+
+        <section class="details">
+            <h2>Details</h2>
+            <ul>
+                <li>Nationality: Indian</li>
+                <!-- <li>Date of birth: 20 December 1993</li> -->
+            </ul>
+        </section>
+
+        <section class="links">
+            <h2>Links</h2>
+            <ul>
+                <li><a href="https://www.linkedin.com/in/roopstharu" target="_blank">LinkedIn</a></li>
+                <li><a href="https://scholar.google.com/citations?user=lLsonH0AAAAJ&hl=en" target="_blank">Google Scholar</a></li>
+                <li><a href="https://github.com/Saviteshku" target="_blank">GitHub</a></li>
+            </ul>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="profile section">
+            <h2>Aim</h2>
+            <p>To learn skill sets which can help me in prioritising my career goals and adhere to workplace environment.</p>
+        </section>
+
+        <section class="employment section">
+            <h2>Employment History</h2>
+            <h3>Lab Technician, Department of Community Medicine and School of Public Health, PGIMER, Chandigarh, India</h3>
+            <p>March 2024 — Present</p>
+            <ul>
+                <li>Working on the Project titled “Leveraging “MERA” (Millets for Encouraging soil Restoration and healthy food
+                    accessibility) initiative for Boosting Farmers Income and consumer health".</li>
+                <li>Data Collection, Sample Collection.</li>
+                <li>Research Paper Writing, Data Analysis.</li>
+                <li>Documentation.</li>
+            </ul>
+        </section>
+
+        <section class="education section">
+            <h2>Education</h2>
+            <h3>M.Sc. Biotechnology, Department of the University Institute of Biotechnology, Chandigarh
+                University, Punjab, India</h3>
+            <p>Aug 2021 — July 2023</p>
+            <p>Dissertation Title: "Human Faecal Microbiota Modulation by Newly
+                Developed Synbiotic Blend: An In-vitro Study".</p>
+            <ul>
+                <li>Molecular Biology, Microbiology,Bioinformatics.</li>
+                <li>Dissertation Writing</li>
+                <li>Data analysis</li>
+                <li>Laboratory Skills</li>
+                <li>Research Writings</li>
+            </ul>
+            <h3>B.Sc.Medical Laboratory Technology(BMLT) Hemvati Nandan Bahuguna Garhwal University, Srinagar, Uttarakhand, India</h3>
+            <p> Aug 2017 — July 2021</p>
+            <ul>
+                <li>Medical Microbiology: Blood Sample collection, Media preparation, Tissue culture, Widal test, CRP, RA and ASO test</li>
+                <li>Clinical Biochemistry: LTF, FBG and KFT</li>
+                <li>Haematology: CBC, ABO blood typing</li>
+                <li>Histopathology and Cytology: Haematoxylin and Eosin staining</li>
+                <li>Result: 71.08%</li>
+            </ul>
+            <h3>Diploma in Certficate Level of Medical Laboratory Technology (CMLT)Pratiman Neema Memorial Health Institute, Rupandehi, Nepal</h3>
+            <li>Course Duration: 2012-2015</li>
+            <li>Medical Microbiology, Clinical Biochemistry, Parasitology, Haematology, Cytology</li>
+            <li>Practical – Manual Laboratory methods</li>
+            <li>Result: 69.73%</li>
+            <h3>Shree Pashupati Madhyamik Vidhyalaya Secondary School, Rupandehi, Nepal.</h3>
+            <p> 2010 — 2011</p>
+            <p>N.E.B Board - 61%</p>
+            
+        </section>
+
+        <section class="skills section">
+            <h2>Skills</h2>
+            <ul>
+                <li>PRISM, STATA <span class="star-rating">★★★★☆</span></li>
+                <li>Mice Handling <span class="star-rating">★★★★☆</span></li>
+                <li>Intravenous Blood Sampling <span class="star-rating">★★★★☆</span></li>
+                <li>qPCR <span class="star-rating">★★★★☆</span></li>
+                <li>Languages: English, Hindi, Nepali<span class="star-rating">★★★★☆</span></li>
+                <li>Data Analysis <span class="star-rating">★★★☆☆</span></li>
+                <li>HPLC <span class="star-rating">★★★☆☆</span></li>
+                <li>Agrose gel Electrophoresis<span class="star-rating">★★★★☆</span></li>
+                <li>DNA Extraction <span class="star-rating">★★★★☆</span></li>
+                <li>Fully Automated Analyzer<span class="star-rating">★★★☆☆</span></li>
+            </ul>
+        </section>
+
+        <section class="hobbies section">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Cooking</li>
+                <li>Painting</li>
+                <li>Photography</li>
+            </ul>
+        </section>
+
+        <section class="publications section">
+            <h2>Published/Accepted Research (International)</h2>
+            <ul>
+                <h8>
+                    <strong>2023</strong>
+                    <ul>
+                        <li><a href= "https://doi.org/10.1016/j.cegh.2023.101497" target="_blank"> Tharu, R., Ahlawat, G. M., Kushwaha, S., & Khanna, P. (2023). Gut microbiota disparities between active Crohn's disease and healthy controls: A global systematic review. Clinical Epidemiology and Global Health, 101497.(IF: 2.5) </a></li>
+                    </ul>
+                </h8>
+            </ul>
+
+        <!-- <section class="presentations section">
+            <h2>Research Work Presentations</h2>
+            <ul>
+                <h8>
+                    <strong>2024</strong>
+                    <ul>
+                        <li>Presented Poster on the topic "Framework for Precision Nutrition in Diabetes" in the Seminar "Nutrition Evidence Synthesis for Biomarker Discovery", 5th March 2024, Organised by Cochrane India, New Delhi</li>
+                    </ul>
+                </h8>
+            </ul>
+        </section> -->
+
+        <!-- <section class="books section">
+            <h2>Published Books/Chapters</h2>
+            <ul>
+                <h8>
+                    <strong>2022</strong>
+                    <ul>
+                        <li><a href="https://books.google.co.in/books?hl=en&lr=&id=Pe6KEAAAQBAJ&oi=fnd&pg=PA50&ots=x7UYlHVXtQ&sig=U6nOQuGHACRiAnkpXMLfX2aW0fQ#v=onepage&q&f=false" target="_blank"> S., Srivastava, R., Vats, H., Khanna, P., (2022) Machine Learning in Healthcare. Chapter -3, Vol - 1; 50 - 70. In Book: Machine Learning for Societal Improvement, Modernization, and Progress. ISBN - DOI: 10.4018/978-1-6684-4045-2.ch003</a></li>
+                    </ul>
+                </h8>
+            </ul>
+        </section> -->
+
+        <!-- <section class="reviews section">
+            <h2>Review Works (Verified at Web of Science/ORCID)</h2>
+            <ul>
+                <h8>
+                    <strong>2024</strong>
+                    <ul>
+                        <li>Reviewed Two manuscript for "Medicine" (Scopus)</li>
+                        <li>Reviewed Two manuscripts for "Diabetes, Obesity and Metabolism" (Scopus)</li>
+                    </ul>
+                </h8>
+            </ul>
+        </section> -->
+
+        <section class="training section">
+            <h2> Workshop/Training/Courses Attended</h2>
+            <ul>
+                <h8>
+                    <strong>2022</strong>
+                    <ul>
+                        <li>Basic Techniques in Industrial Microbiology and Biotechnology, 19th Jan-22ndJan, CSIR-IIIM,Jammu, Indian</li>
+                    </ul>
+                </h8>
+                <h8>
+                    <strong>2020</strong>
+                    <ul>
+                        <li>Attended webinar on topic “Support Breastfeeding for A Healthier Planet” on 7th August
+                            2020 organised by Department of Community Medicine and School of Public Health, PGIMER, Chandigarh, India</li>
+                    </ul>
+                </h8>
+                <h8>
+                    <strong>2020</strong>
+                    <ul>
+                        <li>Attended webinar on topic “Herb & Nutraceuticals as Immune Boosters” on 14th October
+                            2020 organised by Sardar Bhagwan Singh University, Balawala, Dehradun, India</li>
+                    </ul>
+                </h8>
+        <!-- <section class="seminars section">
+            <h2>Seminar/Webinar Attended</h2>
+            <ul>
+                <h8>
+                    <strong>2022</strong>
+                    <ul>
+                        <li>Attended the 12th India Probiotic symposium on the topic "Good Microbiome, Probiotics, and Good Health - The Evidence Gets Stronger" on 5-6 March 2022, organised by Gut Microbiota and Probiotic Science Foundation (India).</li>
+                    </ul>
+                </h8>
+                <h8>
+                    <strong>2021</strong>
+                    <ul>
+                        <li>Attended e-Conference (5th NCTOH) on the topic "Multisectoral convergence for tobacco-free India by 2030: Leading the way towards SDGs" on 25-27 Sept. 2021, organised by the Department of Community Medicine and School of Public Health, PGIMER, Chandigarh.</li>
+                        <li>Attended webinar on the topic "How to publish in Medical Journals" on 22nd Jun 2021, organised by Tylor and Francis group.</li>
+                        <li>Attended Anthropometry webinar on the topic "Obesity phenotypes from BMI to MRI throughout the life course" organised by the University of Cambridge - Biomedical Research Centre in February 2021 (1 Month).</li>
+                        <li>Attended 8th virtual meeting of Diabetes in Asia Study Group on 14th and 15th January 2021.</li>
+                    </ul>
+                </h8>
+                <h8>
+                    <strong>2020</strong>
+                    <ul>
+                        <li>Attended online conference titled "The first national conference of maternal, infant and young child nutrition national working group of Indian association of preventive and social medicine" on 16th and 17th October 2020, organised by the Indian association of preventive and social medicine (IAPSM) in collaboration with Alive and Thrive, India.</li>
+                        <li>Attended webinar on the topic "Support Breastfeeding for A Healthier Planet" on 7th August 2020, organised by the Department of Community Medicine and School of Public Health, PGIMER, Chandigarh.</li>
+                        <li>Attended webinar on the topic "Eliminating trans-fats from oils/fats and foods" on 5th August 2020, organised by GHAI, SIPHER, and Department of Community Medicine and School of Public Health, PGIMER, Chandigarh.</li>
+                        <li>Attended seminar on the topic "Hypertension: Prevention and Management" on 15th February 2020, organised by the Department of Community Medicine and School of Public Health and Department of Internal Medicine, PGIMER, Chandigarh.</li>
+                    </ul>
+                </h8>
+                <h8>
+                    <strong>2015</strong>
+                    <ul>
+                        <li>Attended seminar on the topic "Anthropology of Cardiometabolic Adversities" on 25th -26th September 2015, organised by the Department of Anthropology, University of Delhi.</li>
+                    </ul>
+                </h8>
+            </ul>
+        </section> -->
+
+        <section class="fellowships section">
+            <h2> Awards </h2>
+            <ul>
+                <h8>
+                    <strong>2020</strong>
+                    <ul>
+                        <li>Sardar Bhagwan Singh Post Graduatated Institute Biomedical Research Science, Balawala, Dehradun, India. 3rd Position Prize - 2020</li>
+                    </ul>
+                </h8>
+        </section>
+
+        <!-- <section class="memberships section">
+            <h2>Memberships</h2>
+            <ul>
+                <li>Micronutrient Data Innovation Alliance (DlnA) - October 2022 — Present.</li>
+                <li>Epidemiology Foundation of India - Lifetime Membership - No. 03135</li>
+            </ul>
+        </section> -->
+
+        <section class="references section">
+            <h2>References</h2>
+            <ul>
+                <li>Dr Poonam Khanna (Additional Professor), Department of Community Medicine and School of Public Health, PGIMER -  <a href="mailto:poonamkhanna05@gmail.com">poonamkhanna05@gmail.com</a></li>
+                <li>Dr Dr. Rachana Srivastava, Scientist, Department of Community Medicine and School of Public Health, PGIMER -  <a href="mailto:rachnasri@gmail.com">rachnasri@gmail.com</a></li>
+                <li>Dr Kanthi Kiran Kondepudi,Scientist-E, National Agri-Food Biotechnology Institute, Mohali, Punjab, India - <a href="mailto:kiran@nabi.res.in">kiran@nabi.res.in</a></li>
+                <li>Dr.Savitesh Kushwaha, Biostatistician, Public Health Foundation of India, New-Delhi - <a href="mailto:savi_ku@outlook.com">savi_ku@outlook.com</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
